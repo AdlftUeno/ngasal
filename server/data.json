@@ -1,0 +1,40 @@
+{
+  "dashboard": [
+    {
+      "nama": "Budi Santoso",
+      "nim": "210123456",
+      "semester": 6,
+      "tempat_kkn": "Desa Sukamakmur"
+    },
+    {
+      "nama": "Siti Aminah",
+      "nim": "210654321",
+      "semester": 6,
+      "tempat_kkn": "Desa Mekarjaya"
+    },
+    {
+      "nama": "Ahmad Fadli",
+      "nim": "210987654",
+      "semester": 6,
+      "tempat_kkn": "Desa Tanjung Sari"
+    }
+  ],
+  "users": [
+    {
+      "nama": "Abdillah Rizki Ramadhan",
+      "nim": "230504083",
+      "semester": 6,
+      "tempat_kkn": "Desa Sukamakmur",
+      "email": "ramadhan@gmail.com",
+      "password": "kanaeru"
+    },
+    {
+      "nama": "Siti Aminah",
+      "nim": "210654321",
+      "semester": 6,
+      "tempat_kkn": "Desa Mekarjaya",
+      "email": "siti@gmail.com",
+      "password": "654321"
+    }
+  ]
+}
