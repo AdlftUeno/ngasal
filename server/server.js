@@ -4,6 +4,8 @@ const cors = require("cors");
 const bodyParser = require("body-parser");
 const fs = require("fs");
 const jwt = require("jsonwebtoken");
+const path = require('path'); // Ini WAJIB, bukan buat pajangan
+
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -11,6 +13,7 @@ const SECRET = "supersecretkey"; // Bisa pakai .env
 
 app.use(cors());
 app.use(bodyParser.json());
+app.use('/images', express.static(path.join(__dirname, 'public/images')));
 
 // ✅ Fungsi untuk mengambil data dari data.json
 const loadData = () => {
@@ -51,7 +54,8 @@ app.post("/api/auth/login", (req, res) => {
     // ✅ Buat token JWT (opsional)
     const token = jwt.sign({ id: user.nim, email: user.email }, SECRET, { expiresIn: "1h" });
 
-    res.json({ message: "Login sukses!", token });
+    res.json({ message: "Login sukses!", token, user });
+
 
   } catch (error) {
     console.error("❌ Error saat login:", error);
@@ -68,15 +72,6 @@ app.get("/api/users", (req, res) => {
   }
 });
 
-// **DASHBOARD API**
-app.get("/api/dashboard", (req, res) => {
-  try {
-    const data = loadData();
-    res.json(data.dashboard);
-  } catch (error) {
-    res.status(500).json({ message: "Gagal membaca data" });
-  }
-});
 
 // Jalankan server
 app.listen(PORT, () => {

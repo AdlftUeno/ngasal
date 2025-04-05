@@ -137,6 +137,10 @@ export default {
           password: password.value,
         });
 
+        // ✅ SIMPAN DATA USER KE LOCALSTORAGE
+      localStorage.setItem("loggedInUser", JSON.stringify(res.data.user));
+
+
         console.log("Respon dari backend:", res.data);
         localStorage.setItem("token", res.data.token);
         router.push("/dashboard");

@@ -1,30 +1,16 @@
 {
-  "dashboard": [
-    {
-      "nama": "Budi Santoso",
-      "nim": "210123456",
-      "semester": 6,
-      "tempat_kkn": "Desa Sukamakmur"
-    },
-    {
-      "nama": "Siti Aminah",
-      "nim": "210654321",
-      "semester": 6,
-      "tempat_kkn": "Desa Mekarjaya"
-    },
-    {
-      "nama": "Ahmad Fadli",
-      "nim": "210987654",
-      "semester": 6,
-      "tempat_kkn": "Desa Tanjung Sari"
-    }
-  ],
   "users": [
     {
       "nama": "Abdillah Rizki Ramadhan",
       "nim": "230504083",
       "semester": 6,
       "tempat_kkn": "Desa Sukamakmur",
+      "ttl": "Bagan Batu, 10 Oktober 2005",
+      "prodi": "Informatika",
+      "fakultas": "Sains dan Teknologi",
+      "angkatan": "2023",
+      "dospem": "Munawir",
+      "foto": "/images/fotoAbdillah.jpg",
       "email": "ramadhan@gmail.com",
       "password": "kanaeru"
     },
